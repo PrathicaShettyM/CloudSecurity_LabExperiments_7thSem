@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Login</title>
+</head>
+<body>
+    <h2>Secure Login (Parameterised Queries)</h2>
+    <form action="/login-secure" method="POST">
+        <input type="text" name="username" placeholder="Username" required>
+        <br>
+        <input type="password" name="password" placeholder="Password" required>
+        <br>
+        <br>
+        <button type="submit">Login</button>
+    </form>
+
+    <p style="color: green;">
+        This form is safe because it uses parameterised queries. <br>
+        SQL Injection attempts will fail.
+    </p>
+
+    <p><a href="/"><- Back to Home</a></p>
+</body>
+</html>
